@@ -1,0 +1,77 @@
+
+@layer base {
+  :root {
+    --color-primary: #ff6600;
+    --color-primary-500: oklch(0.71 0.21 47.6 / 0.78);
+    --color-secondary: #003366;
+    --color-accent: #00a7a7;
+    --color-background: #f7f7f7;
+    --color-text: #333333;
+  }
+
+  /* Dark mode variables */
+  .dark {
+    --color-primary: #ffa64d;
+    --color-primary-500: oklch(0.5 0.25 45 / 0.9);
+    --color-secondary: #99ccff;
+    --color-accent: #66d9d9;
+    --color-background: #121212;
+    --color-text: #e0e0e0;
+  }
+}
+
+
+@theme {
+  --color-primary: #ff6600;
+   --color-primary-500:oklch(0.71 0.21 47.6 / 0.78) ;
+  --color-secondary: #003366;
+  --color-accent: #00a7a7;
+  --color-background: #f7f7f7;
+  --color-text: #333333;
+  --color-text-gray:oklch(55.1% 0.027 264.364);
+  --color-white: #fff;
+  --to-teal-300: oklch(23.544% 0.00192 286.051)
+  
+}
+:root {
+   --color-primary: #ff6600;
+   --color-primary-500:oklch(0.71 0.21 47.6 / 0.78) ;
+  --color-secondary: #003366;
+  --color-accent: #00a7a7;
+  --color-background: #f7f7f7;
+  --color-text: #333333;
+  --color-text-gray:oklch(55.1% 0.027 264.364);
+   --color-white: #fff
+}
+
+.dark {
+   --color-primary: #ffa64d;
+    --color-primary-500: oklch(0.5 0.25 45 / 0.9);
+    --color-secondary: #99ccff;
+    --color-accent: #66d9d9;
+    --color-background: #121212;
+    --color-text: #e0e0e0;
+     --color-text-gray:oklch(23.544% 0.00192 286.051);
+     --color-white: #121212;
+     --to-teal-300: oklch(23.544% 0.00192 286.051)
+}
+#root {
+    max-width: 100%;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--color-background);
+    font-family: 'Poppins', 'Noto Sans Khmer', sans-serif;
+    color: var(--color-text);
+}
+
+pre{
+    white-space: normal;
+}
