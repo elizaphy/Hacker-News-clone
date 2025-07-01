@@ -43,7 +43,10 @@ A modern, responsive Hacker News clone built with React, Vite, and Tailwind CSS.
     ```bash
     npm install
     ```
-
+> 🔐 **Note**: Before running or committing code, ensure you have a valid `.env` file in place if 
+> # Example .env
+VITE_API_BASE_URL=https://hacker-news.firebaseio.com/v0
+> 
 3. **Start the development server**
 
     ```bash
