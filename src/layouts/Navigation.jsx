@@ -4,11 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const menu = [
 	{ label: 'posts', path: '/posts' },
-	// { label: 'past', path: '/past' },
 	{ label: 'comments', path: '/comments' },
-	// { label: 'ask', path: '/ask' },
-	// { label: 'show', path: '/show' },
-	// { label: 'jobs', path: '/jobs' },
 ];
 
 export default function Navigation() {
@@ -133,12 +129,12 @@ export default function Navigation() {
 								<Moon className="w-5 h-5 text-yellow-400" />
 							)}
 						</button>
-						<NavLink
+						{/* <NavLink
 							to="/login"
 							className="text-primary ml-2 font-medium border px-5 py-1 rounded-lg bg-white hover:bg-orange-600 hover:text-white transition duration-200 ease-in-out"
 						>
 							login
-						</NavLink>
+						</NavLink> */}
 					</nav>
 
 					{/* Mobile dark mode */}

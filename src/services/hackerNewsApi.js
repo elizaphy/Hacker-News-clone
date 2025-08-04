@@ -38,7 +38,7 @@ export const fetchLatestComments = async (limit = 10, offset = 0) => {
 	commentIds = [...new Set(commentIds)]; // deduplicate
 
 	// Step 4: Fetch comment details
-	const comments = await Promise.all(commentIds.slice(0, 50).map(fetchStoryItem));
+	const comments = await Promise.all(commentIds.slice(0, 10).map(fetchStoryItem));
 
 	// Step 5: Filter valid comments and sort by newest
 	const validComments = comments
