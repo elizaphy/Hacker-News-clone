@@ -10,10 +10,10 @@ import BaseImage from '@components/ui/Image';
 import { useState } from 'react';
 import BaseButton from '@components/ui/Button';
 
-export const PostDetail = () => {
+const PostDetail = () => {
 	const { id } = useParams();
 	const navigate = useNavigate();
-	const [visibleComments, setVisibleComments] = useState(10);
+	const [visibleComments, setVisibleComments] = useState(5);
 	const {
 		data: post,
 		isLoading,
@@ -174,3 +174,4 @@ export const PostDetail = () => {
 		</div>
 	);
 };
+export default PostDetail;

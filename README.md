@@ -4,28 +4,40 @@ A modern, responsive Hacker News clone built with React, Vite, and Tailwind CSS.
 
 ## 🚀 Features
 
-- **Browse Top Stories**: Paginated list of top Hacker News stories
-- **Post Details**: Full post view with content and metadata
-- **Threaded Comments**: Nested comment system with collapsible replies
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **Real-time Data**: Live data from the official Hacker News API
-- **Modern UI**: Clean, intuitive interface with smooth transitions
+- **Browse Hacker News Stories**: Top, New, and Best stories with pagination
+- **Post Details**: View full post content with title, metadata, and external link
+- **Threaded Comments**: Nested, collapsible replies for better readability
+- **Responsive Design**: Optimized for desktop, tablet, and mobile
+- **Live Data**: Real-time data from the official Hacker News API
+- **Modern UI**: Clean interface with subtle hover effects and smooth transitions
+- **Loading States & Error Handling**: User feedback during data fetch or failure
+- **Data Caching**: Faster load with intelligent data caching
 
 ## 🛠️ Tech Stack
 
-- **React 18** - Modern React with hooks
-- **Vite** - Fast build tool and development server
-- **Tailwind CSS** - Utility-first CSS framework
-- **TypeScript** - Type-safe JavaScript
-- **React Router** - Client-side routing
-- **TanStack Query** - Data fetching and caching
-- **date-fns** - Date formatting utilities
-- **Lucide React** - Beautiful icons
+- **React 18** – Functional components and hooks
+- **Vite** – Lightning-fast bundler and dev server
+- **Tailwind CSS** – Utility-first styling
+- **TypeScript** – Type-safe development
+- **React Router** – Client-side routing
+- **TanStack Query** – Data fetching and caching
+- **date-fns** – Lightweight date utilities
+- **Lucide React** – Clean, customizable icons
 
 ## 📋 Prerequisites
 
 - **Node.js**: Version 22 or higher
 - **npm**: Version 8 or higher
+
+## 🌐 API Integration
+
+This application uses the official Hacker News API:
+
+- **Base URL**: `https://hacker-news.firebaseio.com/v0`
+- **Endpoints Used**:
+    - `/{type}stories.json` — IDs for top, new, or best stories
+    - `/item/{id}.json` — Fetch details of a post, comment, or job
+
 
 ## 🚀 Getting Started
 
@@ -33,43 +45,25 @@ A modern, responsive Hacker News clone built with React, Vite, and Tailwind CSS.
 
 1. **Clone the repository**
 
-    ```bash
-    git clone <https://github.com/elizaphy/Hacker-News-clone>
-    cd hacker-news-clone
-    ```
+   ```bash
+    git clone https://github.com/elizaphy/Hacker-News-clone
+    cd Hacker-News-clone
 
 2. **Install dependencies**
 
     ```bash
     npm install
-    ```
 > 🔐 **Note**: Before running or committing code, ensure you have a valid `.env` file in place if 
+
 > # Example .env
-VITE_API_BASE_URL=https://hacker-news.firebaseio.com/v0
-> 
-3. **Start the development server**
+    VITE_API_BASE_URL=https://hacker-news.firebaseio.com/v0
 
-    ```bash
-    npm run dev
-    ```
+> ## 🔧 Available Scripts
 
-4. **Open your browser**
-   Navigate to `http://localhost:3000` to view the application.
-
-### Building for Production
-
-1. **Build the application**
-
-    ```bash
-    npm run build
-    ```
-
-2. **Preview the production build**
-    ```bash
-    npm run preview
-    ```
-
-## 📖 Usage
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
 ### Home Page
 
@@ -79,7 +73,7 @@ VITE_API_BASE_URL=https://hacker-news.firebaseio.com/v0
 
 ### Post Page
 
-- Browse through the latest top stories, new stories and bast stories from Hacker News
+- Browse through the latest top stories, new stories and best stories from Hacker News
 - Use pagination to navigate through more stories
 - Click on any story to view its details
 - Click the external link icon to visit the original source
@@ -89,43 +83,12 @@ VITE_API_BASE_URL=https://hacker-news.firebaseio.com/v0
 - View the full post with title, image, and metadata
 - Read threaded comments with nested replies
 - Visit the original link if available
-- 
+  
 ### Comments Page
 
-- List now latest new comments
+- List latest comments
 - Read threaded comments with nested replies
 - Visit detail comments with nested replies
-
-### Features
-
-- **Responsive Design**: Works seamlessly on all device sizes
-- **Loading States**: Smooth loading indicators while fetching data
-- **Error Handling**: Graceful error messages for failed requests
-- **Caching**: Intelligent data caching for better performance
-
-## 🌐 API Integration
-
-This application uses the official Hacker News API:
-
-- **Base URL**: `https://hacker-news.firebaseio.com/v0`
-- **Endpoints Used**:
-    - `/{type}.json` - topstories, newstories, basestories IDs
-    - `/item/{id}.json` - Individual item details
-
-## 🎨 Design Decisions
-
-- **Color Scheme**: Orange accent (#ff6600) matching Hacker News branding
-- **Typography**: Clean, readable fonts with proper hierarchy
-- **Layout**: Card-based design for modern appeal
-- **Interactions**: Subtle hover effects and smooth transitions
-- **Responsiveness**: Mobile-first approach with Tailwind breakpoints
-
-## 🔧 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
 
 ## 🤝 Contributing
 
@@ -135,13 +98,3 @@ This application uses the official Hacker News API:
 4. Push to the branch (`git push origin master`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
-
-- [Hacker News](https://news.ycombinator.com/) for providing the API
-- [React](https://reactjs.org/) team for the amazing framework
-- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
-- [Vite](https://vitejs.dev/) for the lightning-fast build tool
